@@ -103,7 +103,20 @@ html, body {
 }
 
 .mdl-appg .mdl-card__actions a {
-  color: #00BCD4;
+  color: #303F9F;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+.mdl-appg .mdl-card__actions2 {
+  margin: 0;
+  padding: 4px 4px;
+  color: inherit;
+}
+
+.mdl-appg .mdl-card__actions2 a {
+  color: #303F9F;
+  background-color: whitesmoke;
   margin: 0;
 }
 
