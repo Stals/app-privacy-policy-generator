@@ -1,25 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Copyright 2017 Nishant Srivastava
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-    
-       http://www.apache.org/licenses/LICENSE-2.0
-    
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License. -->
-
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="A simple web app to generate a generic privacy policy for your Android/iOS apps"
+      content="A simple web app to generate a generic privacy policy for your Android/iOS games"
     />
     <meta
       name="viewport"
@@ -27,7 +13,7 @@
     />
     <meta name="copyright" content="Nishant Srivastava" />
     <meta name="author" content="Nishant Srivastava, nisrulz@gmail.com" />
-    <title>App Privacy Policy Generator</title>
+    <title>Game Privacy Policy Generator</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes" />
@@ -117,10 +103,10 @@
                     class="mdl-textfield__input"
                     type="text"
                     v-model="appName"
-                    placeholder="App Name"
+                    placeholder="Game Name"
                   />
                   <label class="mdl-textfield__label" for="appName"
-                    >App Name</label
+                    >Game Name</label
                   >
                 </div>
 
@@ -131,17 +117,17 @@
                     class="mdl-textfield__input"
                     type="text"
                     v-model="appContact"
-                    placeholder="App Contact informations (email, address, ... )"
+                    placeholder="Game Contact informations (email, address, ... )"
                   />
                   <label class="mdl-textfield__label" for="appContact"
-                    >App Contact informations (email, address, ... )</label
+                    >Game Contact informations (email, address, ... )</label
                   >
                 </div>
                 <br />
 
                 <div class="mdl-textfield mdl-js-textfield">
                   <select v-model="typeOfApp" class="form-control">
-                    <option value="" disabled>Choose Type of App</option>
+                    <option value="" disabled>Choose Type of the Game</option>
                     <option>Free</option>
                     <option>Open Source</option>
                     <option>Freemium</option>
@@ -255,8 +241,8 @@
                 <div id="privacy_content">
                   <h2>Privacy Policy</h2>
                   <p>
-                    {{ devOrCompanyName }} built the {{ appName }} app as
-                    {{ typeOfAppTxt }} app. This SERVICE is provided by
+                    {{ devOrCompanyName }} built the {{ appName }} game as
+                    {{ typeOfAppTxt }} game. This SERVICE is provided by
                     {{ devOrCompanyName }} {{ atNoCost }} and is intended for
                     use as is.
                   </p>
@@ -290,7 +276,7 @@
                     {{ retainedInfo }}.
                   </p>
                   <p>
-                    The app does use third party services that may collect
+                    The game does use third party services that may collect
                     information used to identify you.
                   </p>
 
@@ -299,7 +285,7 @@
                   >
                     <p>
                       Link to privacy policy of third party service providers
-                      used by the app
+                      used by the game
                     </p>
                     <ul>
                       <li
@@ -316,11 +302,11 @@
                   <p>
                     {{ iOrWe | capitalize }} want to inform you that whenever
                     you use {{ myOrOur }} Service, in a case of an error in the
-                    app {{ iOrWe }} collect data and information (through third
+                    game {{ iOrWe }} collect data and information (through third
                     party products) on your phone called Log Data. This Log Data
                     may include information such as your device Internet
                     Protocol (“IP”) address, device name, operating system
-                    version, the configuration of the app when utilizing
+                    version, the configuration of the game when utilizing
                     {{ myOrOur }} Service, the time and date of your use of the
                     Service, and other statistics.
                   </p>
@@ -333,7 +319,7 @@
                   </p>
                   <p>
                     This Service does not use these “cookies” explicitly.
-                    However, the app may use third party code and libraries that
+                    However, the game may use third party code and libraries that
                     use “cookies” to collect information and improve their
                     services. You have the option to either accept or refuse
                     these cookies and know when a cookie is being sent to your
@@ -439,50 +425,41 @@
                 <div id="tandc_content">
                   <h2>Terms &amp; Conditions</h2>
                   <p>
-                    By downloading or using the app, these terms will
+                    By downloading or using the game, these terms will
                     automatically apply to you – you should make sure therefore
-                    that you read them carefully before using the app. You’re
-                    not allowed to copy, or modify the app, any part of the app,
+                    that you read them carefully before using the game. You’re
+                    not allowed to copy, or modify the game, any part of the game,
                     or our trademarks in any way. You’re not allowed to attempt
-                    to extract the source code of the app, and you also
-                    shouldn’t try to translate the app into other languages, or
-                    make derivative versions. The app itself, and all the trade
+                    to extract the source code of the game, and you also
+                    shouldn’t try to translate the game into other languages, or
+                    make derivative versions. The game itself, and all the trade
                     marks, copyright, database rights and other intellectual
                     property rights related to it, still belong to
                     {{ devOrCompanyName }}.
                   </p>
 
                   <p>
-                    {{ devOrCompanyName }} is committed to ensuring that the app
-                    is as useful and efficient as possible. For that reason, we
-                    reserve the right to make changes to the app or to charge
-                    for its services, at any time and for any reason. We will
-                    never charge you for the app or its services without making
-                    it very clear to you exactly what you’re paying for.
-                  </p>
-
-                  <p>
-                    The {{ appName }} app stores and processes personal data
+                    The {{ appName }} game stores and processes personal data
                     that you have provided to us, in order to provide
                     {{ myOrOur }} Service. It’s your responsibility to keep your
-                    phone and access to the app secure. We therefore recommend
+                    phone and access to the game secure. We therefore recommend
                     that you do not jailbreak or root your phone, which is the
                     process of removing software restrictions and limitations
                     imposed by the official operating system of your device. It
                     could make your phone vulnerable to
                     malware/viruses/malicious programs, compromise your phone’s
                     security features and it could mean that the
-                    {{ appName }} app won’t work properly or at all.
+                    {{ appName }} game won’t work properly or at all.
                   </p>
 
                   <p>
                     You should be aware that there are certain things that
                     {{ devOrCompanyName }} will not take responsibility for.
-                    Certain functions of the app will require the app to have an
+                    Certain functions of the game will require the game to have an
                     active internet connection. The connection can be Wi-Fi, or
                     provided by your mobile network provider, but
                     {{ devOrCompanyName }} cannot take responsibility for the
-                    app not working at full functionality if you don’t have
+                    game not working at full functionality if you don’t have
                     access to Wi-Fi, and you don’t have any of your data
                     allowance left.
                   </p>
@@ -490,24 +467,24 @@
                   <p></p>
 
                   <p>
-                    If you’re using the app outside of an area with Wi-Fi, you
+                    If you’re using the game outside of an area with Wi-Fi, you
                     should remember that your terms of the agreement with your
                     mobile network provider will still apply. As a result, you
                     may be charged by your mobile provider for the cost of data
-                    for the duration of the connection while accessing the app,
-                    or other third party charges. In using the app, you’re
+                    for the duration of the connection while accessing the game,
+                    or other third party charges. In using the game, you’re
                     accepting responsibility for any such charges, including
-                    roaming data charges if you use the app outside of your home
+                    roaming data charges if you use the game outside of your home
                     territory (i.e. region or country) without turning off data
                     roaming. If you are not the bill payer for the device on
-                    which you’re using the app, please be aware that we assume
+                    which you’re using the game, please be aware that we assume
                     that you have received permission from the bill payer for
-                    using the app.
+                    using the game.
                   </p>
 
                   <p>
                     Along the same lines, {{ devOrCompanyName }} cannot always
-                    take responsibility for the way you use the app i.e. You
+                    take responsibility for the way you use the game i.e. You
                     need to make sure that your device stays charged – if it
                     runs out of battery and you can’t turn it on to avail the
                     Service, {{ devOrCompanyName }} cannot accept
@@ -516,32 +493,32 @@
 
                   <p>
                     With respect to {{ devOrCompanyName }}’s responsibility for
-                    your use of the app, when you’re using the app, it’s
+                    your use of the game, when you’re using the game, it’s
                     important to bear in mind that although we endeavour to
                     ensure that it is updated and correct at all times, we do
                     rely on third parties to provide information to us so that
                     we can make it available to you.
                     {{ devOrCompanyName }} accepts no liability for any loss,
                     direct or indirect, you experience as a result of relying
-                    wholly on this functionality of the app.
+                    wholly on this functionality of the game.
                   </p>
 
                   <p>
-                    At some point, we may wish to update the app. The app is
+                    At some point, we may wish to update the game. The game is
                     currently available on {{ osType }} – the requirements for
                     {{ requirementOfSystem }} (and for any additional systems we
-                    decide to extend the availability of the app to) may change,
+                    decide to extend the availability of the game to) may change,
                     and you’ll need to download the updates if you want to keep
-                    using the app. {{ devOrCompanyName }} does not promise that
-                    it will always update the app so that it is relevant to you
+                    playing the game. {{ devOrCompanyName }} does not promise that
+                    it will always update the game so that it is relevant to you
                     and/or works with the {{ osType }} version that you have
                     installed on your device. However, you promise to always
-                    accept updates to the application when offered to you, We
-                    may also wish to stop providing the app, and may terminate
+                    accept updates to the game when offered to you, We
+                    may also wish to stop providing the game, and may terminate
                     use of it at any time without giving notice of termination
                     to you. Unless we tell you otherwise, upon any termination,
                     (a) the rights and licenses granted to you in these terms
-                    will end; (b) you must stop using the app, and (if needed)
+                    will end; (b) you must stop using the game, and (if needed)
                     delete it from your device.
                   </p>
 
@@ -652,12 +629,12 @@
                 provided on "AS IS" basis, without warranties or conditions of
                 any kind, either expressed or implied. It is intended for you as
                 an inspirational document and you may use it when compiling your
-                own privacy policy. The developer of App Privacy Policy
+                own privacy policy. The developer of Game Privacy Policy
                 Generator does not take any responsibility for the legal
                 consequences associated with the use of this privacy policy or
                 terms &amp; conditions, and I urge you to seek local legal
                 advice ensuring compliance with all rules applicable for the
-                users of your application. The developer of App Privacy Policy
+                users of your application. The developer of Game Privacy Policy
                 Generator can in no way be found liable for any direct or
                 indirect damage or loss suffered by you due to the use of this
                 document.
